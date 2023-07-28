@@ -99,3 +99,13 @@ git pull
 
 ## HEAD
 Файл **HEAD** - один из служебных файлов папки `.git`. Он указывает на коммит, который сделан последним (то есть на самый новый). Внутри **HEAD** - ссылка на служебный файл: `refs/heads/main`, содержащий хеш последнего коммита.
+
+
+## Жизненный цикл файла в Git
+```mermaid
+graph LR;
+  untracked       -- git add --> staged\ntracked;
+  staged\ntracked -- git commit --> tracked;
+  tracked -- изменения --> modified\ntracked;
+  modified\ntracked -- git add --> staged\ntracked;
+``` 
