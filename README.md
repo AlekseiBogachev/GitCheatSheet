@@ -100,6 +100,25 @@ git push
 git pull
 ```
 
+### "Откатить" изменения, которые не попали ни в staging, ни в коммит
+```console
+git restore <file>
+```
+
+### Убрать файл из staging area
+```console
+git restore --staged <file>
+```
+Чтобы убрать все файлы можно использовать следующую команду
+```console
+git restore --staged .
+```
+
+### "Откатить" коммит и удалить последующие
+```
+git reset --hard <commit hash>
+```
+
 
 ## Хеш
 **Хеш** - основной идентификатор коммита.
