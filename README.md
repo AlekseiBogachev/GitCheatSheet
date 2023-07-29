@@ -115,8 +115,24 @@ git restore --staged .
 ```
 
 ### "Откатить" коммит и удалить последующие
-```
+```console
 git reset --hard <commit hash>
+```
+
+### Проверить изменения в файлах
+Для файлов, недобавленных в staging area:
+```console
+git diff
+```
+
+Для файлов, добавленных в staging area:
+```console
+git diff --staged
+```
+
+Чтобы сравнить состояние файлов в двух разных коммитах:
+```console
+git diff <хеш коммита 1> <хеш коммита 2>
 ```
 
 
