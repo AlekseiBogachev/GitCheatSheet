@@ -59,6 +59,16 @@ git log
 git log --oneline
 ```
 
+Следующая команда заставит Git нарисовать ветки с помощью "палочек" и "звёздочек":
+```console
+git log --graph
+```
+или
+```console
+git log --graph --oneline
+```
+
+
 ### Изменть последний коммит
 ```console
 git commit --amend
